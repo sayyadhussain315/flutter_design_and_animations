@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         floatingActionButtonTheme:
         FloatingActionButtonThemeData(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.blue,
         ),
         appBarTheme: AppBarTheme(foregroundColor: Colors.white),
         brightness: Brightness.light,
@@ -25,12 +25,12 @@ class MyApp extends StatelessWidget {
           seedColor: Colors.green,
           secondary: Colors.deepOrangeAccent,
         ),
-        fontFamily: 'Georgia',
         textTheme: const TextTheme(
           displayLarge: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
           titleLarge:   TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
-          bodyMedium:   TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
+          bodyMedium:   TextStyle(fontSize: 14.0, fontFamily: ''),
         ),
+        fontFamily: 'Pacifico',
       ),
       debugShowCheckedModeBanner: false,
       home: MyHomePage(title: appName),
@@ -52,7 +52,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          color: Theme.of(context).colorScheme.secondary,
+          color: Theme.of(context).colorScheme.primary,
           child: Text(
             'Hello Geeks!',
             style: Theme.of(context).textTheme.titleLarge,
